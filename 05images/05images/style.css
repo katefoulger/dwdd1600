@@ -6,6 +6,8 @@ margin: 0;
     
 }
 
+/* Here is the styling for the header */
+
 header {
    background-color: #eaeaea;
     padding: 1rem 2vw;
@@ -38,6 +40,8 @@ header p{
     letter-spacing: .5px;
 }
 
+/*Navbar styling below*/
+
 nav{
    background-color: #2a2a29;
     
@@ -52,7 +56,7 @@ nav ul{
 nav ul li a{
     font-size: 1.1rem;
     text-decoration: none;
-    color: #477286;
+    color: #ffffff;
     font-weight: 700;
     display: block;
     padding: .83rem 2rem;
@@ -60,13 +64,38 @@ nav ul li a{
 }
 
 nav li.active a{
-    background-color: #477286;
+    background-color: #ffffff;
         color:#2a2a29;
 }
 
 nav a: hover{
     color: #fff;
 }
+
+/*Styling for main with color and margins*/
+
+figure.wrapped{
+    width:30%;
+    margin: 0 0 0 2%;
+    float: right;
+}
+
+figure.wrapped img{
+    width: 100%;
+    height: auto;
+    
+}
+
+figure.wrapped figcaption{
+    text-align: center;
+    font-size: .75rem;
+    
+}
+
+.image-column {
+    flex: 1 0 50%; /* Two columns */
+}
+
 
 main{
    padding: 1rem 2vw 
@@ -129,6 +158,8 @@ main a{
 main a:hover{
     color: rgb(239,0,24);
 }
+
+/*Footer styling with color, and text changes*/
 
 footer{
     background-color: #eaeaea;
