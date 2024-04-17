@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Kate Foulger">
+    <meta name="description" content="Description of your website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bands In Town - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="top">
+        <h1>Bands In Town</h1>
+        <h2>Find Concerts Near You</h2>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home Page</a></li>
+            <li><a href="origin.html">Company Origin</a></li>
+            <li><a href="imageGallery.html">Image Gallery</a></li>
+            <li><a href="tickets.html">Tickets</a></li>
+            <li class="active"><a href="locations.html">Locations</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <div class="locations-container">
+            <h2>Locations in California</h2>
+            <ul>
+                <li>
+                    <h3>Los Angeles</h3>
+                    <p>Find concerts and events in Los Angeles.</p>
+                    <a href="los_angeles_info.html" class="info-button">More Info</a>
+                </li>
+                <li>
+                    <h3>San Francisco</h3>
+                    <p>Explore concerts and events in San Francisco.</p>
+                    <a href="san_francisco_info.html" class="info-button">More Info</a>
+                </li>
+                <li>
+                    <h3>San Diego</h3>
+                    <p>Discover concerts and events in San Diego.</p>
+                    <a href="san_diego_info.html" class="info-button">More Info</a>
+                </li>
+            </ul>
+        </div>
+        <div class="locations-container">
+
+    <h2>How Can We Improve?</h2>
+    <form id="locations-form" action="submit_location.php" method="post">
+      <fieldset>
+        <legend>Select Your Location:</legend>
+        <label for="location">Location:</label>
+        <select id="location" name="location" required>
+          <option value="">Select a location</option>
+            <option value="new-york">Current Location</option>
+          <option value="new-york">New York</option>
+          <option value="los-angeles">Los Angeles</option>
+          <option value="chicago">Chicago</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>What can we do different?</legend>
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments here..." required></textarea>
+      </fieldset>
+
+      <fieldset>
+        <button type="submit">Submit</button>
+      </fieldset>
+    </form>
+  </div>
+    </main>
+
+    <footer>
+        <p>&bull; &copy; 2024 Bands In Town. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
