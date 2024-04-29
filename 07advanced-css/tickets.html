@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Kate Foulger">
+  <meta name="description" content="Description of your website">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Bands In Town - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="top" style="max-width: 1200px; margin: 0 auto;">
+    <!-- Use flexbox to position the logo to the left side of the site name and slogan -->
+    <div class="site-info" style="display: flex; align-items: center;">
+                <img src="images/logo.png" alt="Logo" style="max-width: 100px; max-height: 100px;">
+
+        <h1>Bands In Town</h1>
+        <h2>Find Concerts Near You</h2>
+    </div>
+        <nav style="max-width: 1200px; margin: 0 auto;">
+            <!-- Implement a single column of menu items for small screens -->
+            <ul class="menu">
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="origin.html">Company Origin</a></li>
+                <li><a href="imageGallery.html">Image Gallery</a></li>
+                <li class="active"><a href="tickets.html">Tickets</a></li>
+                <li><a href="locations.html">Locations</a></li>
+            </ul>
+        </nav>
+    </header>
+   
+  <main style="max-width: 1200px; margin: 0 auto;">
+    <div class="container">  
+<form id="contact" action="thanks.html" method="get">
+        <fieldset>
+    <legend>Create an Account</legend>
+    <label for="name">Your name:</label>
+    <input id="name" placeholder="Your name" type="text" tabindex="1" required autofocus>
+  </fieldset>
+        <fieldset>
+          <label for="email">Your Email Address:</label>
+          <input id="email" placeholder="Your Email Address" type="email" tabindex="2" required>
+        </fieldset>
+        <fieldset>
+          <label for="phone">Your Phone Number:</label>
+          <input id="phone" placeholder="Your Phone Number" type="tel" required tabindex="3">
+        </fieldset>
+        <fieldset>
+          <label for="gender">Gender:</label><br>
+          <label for="male"><input id="male" type="radio" name="gender" value="male">Male</label>
+          <label for="female"><input id="female" type="radio" name="gender" value="female">Female</label>
+          <label for="other"><input id="other" type="radio" name="gender" value="other">Other</label>
+        </fieldset>
+        <fieldset>
+          <label for="interests">Genre Interests:</label><br>
+          <label for="country"><input id="country" type="checkbox" name="interests" value="country">Country</label>
+          <label for="rap"><input id="rap" type="checkbox" name="interests" value="rap">Rap</label>
+          <label for="Pop"><input id="Pop" type="checkbox" name="interests" value="Pop">Pop</label>
+            <label for="EDM"><input id="EDM" type="checkbox" name="interests" value="EDM">EDM</label>
+            <label for="Alternative"><input id="Alternative" type="checkbox" name="interests" value="Alternative">Alternative</label>
+            <label for="Rock"><input id="Rock" type="checkbox" name="interests" value="Rock">Rock</label>
+          </fieldset>
+        <fieldset>
+          <label for="country">Country of Origin:</label>
+          <select id="country" name="country">
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="Canada">Canada</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">View Tickets</button>
+        </fieldset>
+      </form>
+    </div>
+  </main>
+  
+  <!-- Start of footer -->
+  <footer style="max-width: 1200px; margin: 0 auto;">
+    <p>&bull; &copy; 2024 Bands In Town. All rights reserved.</p>
+  </footer>
+</body>
+</html>
